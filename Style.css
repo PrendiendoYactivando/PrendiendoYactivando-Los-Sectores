@@ -1,0 +1,785 @@
+/* Importar fuente desde Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos generales */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('IMG/TOluca\ desde\ arriba.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #b3aeaed0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Barra de Navegación */
+
+.navbar {
+    background-color: #681e1eca;
+    border-bottom: 1px solid #070707;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.navbar-logo-text {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: #f5f6f6;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #f4eded;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #080201;
+}
+
+
+/* Sección Hero */
+
+.hero-section {
+    position: relative;
+    background: url('IMG/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(209, 207, 207, 0.841);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-about {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 2s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Sección de Objetivos y Metas */
+
+.container.text-center {
+    padding: 2rem;
+    background: rgba(14, 13, 13, 0.5);
+    /* Fondo oscuro */
+    color: #f7f3f3;
+    border-radius: 10px;
+}
+
+.section-heading {
+    color: #f6f1f1;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(254, 252, 252);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgb(245, 244, 244);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #100f0f;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #030303;
+}
+
+.img-container img {
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+    /* Efecto de zoom */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Sección de Redes Sociales y Video */
+
+.social-video-section {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 0;
+    overflow: hidden;
+    background-color: rgba(36, 36, 36, 0.407);
+    /* Opcional: Ajustar el fondo para mayor contraste */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.social-content {
+    position: relative;
+    z-index: 2;
+}
+
+.social-video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f0f0f0;
+}
+
+
+/* Estilo para el título de la sección en blanco */
+
+.section-heading {
+    color: #ffffff;
+    /* Color blanco */
+}
+
+
+/* Estilo específico para la sección de Redes Sociales */
+
+.social-video-section .section-heading {
+    color: #ffffff;
+    /* Color blanco */
+}
+
+
+/* Contenedor del Video */
+
+.video-container {
+    margin: 20px auto;
+    /* Separar el video del contenido superior e inferior */
+    width: 80%;
+    /* Ajusta el ancho según tus necesidades */
+    max-width: 800px;
+    /* Limitar el ancho máximo del video */
+    padding-bottom: 20px;
+    /* Añadir espacio adicional en la parte inferior */
+}
+
+
+/* Estilo del iframe */
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+}
+
+
+/* Carrusel de imágenes */
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 60px auto;
+    /* Mayor separación del video y márgenes superior e inferior */
+    padding: 10px;
+    /* Espaciado interno */
+    background: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro y opaco para mejor contraste */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra para profundidad */
+    max-width: 90%;
+    /* Mayor ancho máximo */
+}
+
+.carousel-inner img {
+    height: 350px;
+    /* Mayor altura para más impacto visual */
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    /* Bordes redondeados en las imágenes */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(100%);
+    width: 50px;
+    /* Tamaño de los controles */
+    height: 50px;
+    /* Tamaño de los controles */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro para los controles */
+    border-radius: 50%;
+    /* Controles circulares */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    /* Tamaño del icono */
+    transition: background 0.3s ease;
+    /* Transición suave al pasar el cursor */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+    /* Fondo más oscuro al pasar el cursor */
+}
+
+
+/* Estilo para los indicadores del carrusel */
+
+.carousel-indicators li {
+    background-color: #ffffff;
+    /* Color blanco para los indicadores */
+}
+
+.carousel-indicators .active {
+    background-color: #333;
+    /* Color oscuro para el indicador activo */
+}
+
+
+/* Estilos para el Mosaico de Imágenes */
+
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    background-color: #333;
+    /* Fondo oscuro para contraste */
+    border-radius: 10px;
+}
+
+.mosaic div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mosaic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mosaic img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.mosaic-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.mosaic div:hover .mosaic-caption {
+    opacity: 1;
+}
+
+.section-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+/* Pie de página */
+
+.footer {
+    background-color: #343536;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilo adicional para la imagen circular */
+
+.circular-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Animaciones de deslizamiento */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-heading,
+.card,
+.mosaic img {
+    animation: slideUp 0.5s ease-out;
+}
+
+
+/* Animación de deslizamiento al hacer scroll */
+
+@media (min-width: 768px) {
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* NOSOTROS */
+
+.text-section {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(46, 44, 44, 0.619);
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+.text-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #f4f0f0;
+    text-align: justify;
+}
+
+.text-section h1 {
+    color: #fffcfc;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text-section h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 10px auto;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
+}
+
+
+/* Sección de Contacto */
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #681e1e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #581c1c;
+}
+
+
+/* Estilos para la Sección Hero */
+
+.hero-section {
+    position: relative;
+    background: url('IMG/hero-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    /* Ajusta la altura del hero-section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+
+/* Estilos para la Sección de Contacto */
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #681e1e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: #581c1c;
+}
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.social-media-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-link i {
+    margin-right: 10px;
+}
+
+.social-link:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.social-link:hover i {
+    color: #ffffff;
+}
+
+
+/* Estilos para pantallas pequeñas */
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+    .navbar-logo-text {
+        font-size: 1.5rem;
+    }
+    .img-container img {
+        max-width: 100%;
+    }
+    .video-container iframe {
+        height: 200px;
+    }
+    .card-title {
+        font-size: 1.2rem;
+    }
+    .text-section {
+        padding: 10px;
+    }
+}
+
+.hero-section {
+    height: 60vh;
+    /* Ajusta la altura para pantallas más grandes */
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 40vh;
+        /* Menor altura en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-primary {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+    .form-group input,
+    .form-group textarea {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
